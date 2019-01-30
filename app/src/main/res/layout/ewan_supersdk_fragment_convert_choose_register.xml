@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ewan_supersdk_convert_choose_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="16dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ewan_supersdk_cw_back_btn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical|left"
+            android:text="选择注册方式"
+            android:textColor="@color/ewan_supersdk_white"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/ewan_supersdk_convert_choose_start_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/ewan_supersdk_selector_convert_yellow_btn"
+        android:text="手机注册   (推荐)"
+        android:textColor="@color/ewan_supersdk_convert_account_bg"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="账号更安全，可自助重置密码等"
+        android:textColor="@color/ewan_supersdk_convert_font_gray"
+        android:textSize="14dp"/>
+    
+    <TextView
+        android:id="@+id/ewan_supersdk_convert_choose_other_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="59dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="其他注册方式"
+        android:textColor="@color/ewan_supersdk_white"
+        android:textSize="14dp"/>
+</LinearLayout>

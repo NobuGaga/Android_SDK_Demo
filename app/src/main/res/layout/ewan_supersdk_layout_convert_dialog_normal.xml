@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ewan_supersdk_black"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="195dp"
+        android:background="@drawable/ewan_supersdk_shape_convert_dialog_normal_bg"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/ewan_supersdk_convert_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="提示"
+            android:textColor="@color/ewan_supersdk_white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/ewan_supersdk_convert_dialog_msg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:clickable="true"
+            android:gravity="center_vertical|left"
+            android:lineSpacingMultiplier="1.5"
+            android:maxLines="30"
+            android:scrollbars="vertical"
+            android:textColor="@color/ewan_supersdk_convert_font_gray"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/ewan_supersdk_convert_dialog_right_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:gravity="center"
+                android:background="@drawable/ewan_supersdk_shape_convert_text_bottom_line"
+                android:text="确定"
+                android:textColor="@color/ewan_supersdk_convert_font_yellow"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/ewan_supersdk_convert_dialog_left_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:gravity="center"
+                android:layout_toLeftOf="@id/ewan_supersdk_convert_dialog_right_btn"
+                android:text="取消"
+                android:textColor="@color/ewan_supersdk_convert_font_gray"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

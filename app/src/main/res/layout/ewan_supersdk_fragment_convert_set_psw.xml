@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical|left"
+        android:text="验证成功，系统分配的账号为："
+        android:textColor="@color/ewan_supersdk_white"
+        android:textSize="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ewan_supersdk_convert_set_psw_username_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:textColor="@color/ewan_supersdk_convert_font_yellow"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:id="@+id/ewan_supersdk_convert_set_psw_edit_username_btn"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:padding="7dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ewan_supersdk_cw_edit_account"/>
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_marginTop="5dp"
+        android:text="仅可改一次，别处不可修改"
+        android:textColor="@color/ewan_supersdk_convert_font_gray"
+        android:textSize="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/ewan_supersdk_shape_convert_input_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:gravity="center_vertical"
+            android:text="密码"
+            android:textColor="@color/ewan_supersdk_white"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/ewan_supersdk_convert_set_psw_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="6~20个字符"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:paddingLeft="16dp"
+            android:textColor="@color/ewan_supersdk_white"
+            android:textColorHint="@color/ewan_supersdk_convert_font_gray"
+            android:textSize="14dp" />
+
+        <CheckBox
+            android:id="@+id/ewan_supersdk_convert_set_psw_show_cb"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:button="@drawable/ewan_supersdk_selector_convert_show_password_btn"
+            android:checked="true"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ewan_supersdk_convert_set_psw_submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/ewan_supersdk_selector_convert_yellow_btn"
+        android:text="提交"
+        android:textColor="@color/ewan_supersdk_convert_account_bg"
+        android:textSize="18dp"/>
+</LinearLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="172dp"
+            android:layout_height="34dp"
+            android:scaleType="fitCenter"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ewan_supersdk_cw_logo"/>
+
+        <TextView
+            android:id="@+id/ewan_supersdk_convert_notice_switch_account_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center"
+            android:text="切换账号"
+            android:textColor="@color/ewan_supersdk_convert_font_gray"
+            android:textSize="14dp"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ewan_supersdk_convert_notice_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/ewan_supersdk_transparent"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="账号转移公告"
+            android:textColor="@color/ewan_supersdk_convert_font_yellow"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/ewan_supersdk_convert_step_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/ewan_supersdk_convert_text_btn_pressed_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="账号转移流程说明"
+            android:textColor="@color/ewan_supersdk_convert_font_gray"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="126dp">
+
+        <TextView
+            android:id="@+id/ewan_supersdk_convert_notice_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="16dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="16dp"
+            android:text="公告内容"
+            android:textColor="@color/ewan_supersdk_convert_font_gray"
+            android:textSize="14dp"
+            android:visibility="visible"/>
+
+        <ScrollView
+            android:id="@+id/ewan_supersdk_convert_steps_content_sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="false"
+            android:overScrollMode="never"
+            android:visibility="invisible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/ewan_supersdk_convert_ring1"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/ewan_supersdk_shape_convert_steps_ring"/>
+
+
+                <View
+                    android:id="@+id/ewan_supersdk_convert_line1"
+                    android:layout_width="2dp"
+                    android:layout_height="37dp"
+                    android:layout_alignLeft="@id/ewan_supersdk_convert_ring1"
+                    android:layout_below="@id/ewan_supersdk_convert_ring1"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/ewan_supersdk_shape_convert_steps_line"/>
+
+                <View
+                    android:id="@+id/ewan_supersdk_convert_ring2"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignLeft="@id/ewan_supersdk_convert_ring1"
+                    android:layout_below="@id/ewan_supersdk_convert_line1"
+                    android:background="@drawable/ewan_supersdk_shape_convert_steps_ring"/>
+
+                <View
+                    android:id="@+id/ewan_supersdk_convert_line2"
+                    android:layout_width="2dp"
+                    android:layout_height="37dp"
+                    android:layout_alignLeft="@id/ewan_supersdk_convert_ring2"
+                    android:layout_below="@id/ewan_supersdk_convert_ring2"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/ewan_supersdk_shape_convert_steps_line"/>
+
+
+                <View
+                    android:id="@+id/ewan_supersdk_convert_ring3"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignLeft="@id/ewan_supersdk_convert_ring2"
+                    android:layout_below="@id/ewan_supersdk_convert_line2"
+                    android:background="@drawable/ewan_supersdk_shape_convert_steps_ring"/>
+
+                <TextView
+                    android:id="@+id/ewan_supersdk_convert_step1_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/ewan_supersdk_convert_ring1"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_toRightOf="@id/ewan_supersdk_convert_ring1"
+                    android:gravity="center_vertical|left"
+                    android:text="步骤1：注册1号玩家账号"
+                    android:textColor="@color/ewan_supersdk_convert_font_gray"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/ewan_supersdk_convert_step2_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/ewan_supersdk_convert_ring2"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_toRightOf="@id/ewan_supersdk_convert_ring2"
+                    android:gravity="center_vertical|left"
+                    android:text="步骤2：下载1号玩家版本的游戏"
+                    android:textColor="@color/ewan_supersdk_convert_font_gray"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/ewan_supersdk_convert_step3_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/ewan_supersdk_convert_ring3"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_toRightOf="@id/ewan_supersdk_convert_ring3"
+                    android:gravity="center_vertical|left"
+                    android:text="步骤3：登录1号玩家版本的游戏"
+                    android:textColor="@color/ewan_supersdk_convert_font_gray"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/ewan_supersdk_convert_step3_tv"
+                    android:layout_below="@id/ewan_supersdk_convert_step3_tv"
+                    android:layout_marginTop="5dp"
+                    android:text="如果要转移多个账号，请切换原平台账号，重复步骤1、3"
+                    android:textColor="@color/ewan_supersdk_convert_font_gray"
+                    android:textSize="12dp"/>
+
+            </RelativeLayout>
+        </ScrollView>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/ewan_supersdk_convert_start_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ewan_supersdk_selector_convert_yellow_btn"
+        android:text="已了解，开始操作"
+        android:textColor="@color/ewan_supersdk_convert_account_bg"
+        android:textSize="18dp"/>
+</LinearLayout>

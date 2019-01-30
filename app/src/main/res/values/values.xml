@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ewan_supersdk_background">#FF113751</color>
+    <color name="ewan_supersdk_bindrole_font_color">#FF473228</color>
+    <color name="ewan_supersdk_black">#00000000</color>
+    <color name="ewan_supersdk_blue">#FF6699CC</color>
+    <color name="ewan_supersdk_blue_shadow">#FF959395</color>
+    <color name="ewan_supersdk_blue_text">#FF2364A5</color>
+    <color name="ewan_supersdk_convert_account_bg">#21232B</color>
+    <color name="ewan_supersdk_convert_btn_forbidden">#7FFFF600</color>
+    <color name="ewan_supersdk_convert_btn_pressed_yellow">#AAFFF400</color>
+    <color name="ewan_supersdk_convert_font_gray">#AEAEB0</color>
+    <color name="ewan_supersdk_convert_font_red">#FF0000</color>
+    <color name="ewan_supersdk_convert_font_yellow">#FFF600</color>
+    <color name="ewan_supersdk_convert_input_bar_bg">#181A23</color>
+    <color name="ewan_supersdk_convert_input_bg">#2E3039</color>
+    <color name="ewan_supersdk_convert_line">#51FFF600</color>
+    <color name="ewan_supersdk_convert_ring_in">#7FFFF600</color>
+    <color name="ewan_supersdk_convert_text_btn_pressed_bg">#0F111A</color>
+    <color name="ewan_supersdk_exit_dialog_left_btn">#96d285</color>
+    <color name="ewan_supersdk_exit_dialog_right_btn">#d29a86</color>
+    <color name="ewan_supersdk_exit_dialog_title_bg">#021d30</color>
+    <color name="ewan_supersdk_grey">#ffcecece</color>
+    <color name="ewan_supersdk_logo_text">#a0d7ff</color>
+    <color name="ewan_supersdk_recharge_bg">#113751</color>
+    <color name="ewan_supersdk_reg_title_text">#fdae13</color>
+    <color name="ewan_supersdk_transparent">#00000000</color>
+    <color name="ewan_supersdk_web_progress">#FF6600</color>
+    <color name="ewan_supersdk_white">#FFFFFFFF</color>
+    <string name="cw_pl_packet">礼包</string>
+    <string name="cw_pl_platform">用户中心</string>
+    <string name="cw_pl_switchaccount">切换帐号</string>
+    <string name="ewan_supersdk_cancel">取消</string>
+    <string name="ewan_supersdk_cw_pl_packet">礼包</string>
+    <string name="ewan_supersdk_cw_pl_platform">账户</string>
+    <string name="ewan_supersdk_cw_pl_switchaccount">切换</string>
+    <string name="ewan_supersdk_limit_account">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_.@-</string>
+    <string name="ewan_supersdk_loading_tip">努力加载中...</string>
+    <string name="ewan_supersdk_login_cancel_btn">取消登录</string>
+    <string name="ewan_supersdk_login_fail_btn">登录失败</string>
+    <string name="ewan_supersdk_login_pwd">密码：</string>
+    <string name="ewan_supersdk_login_success_btn">登录成功</string>
+    <string name="ewan_supersdk_login_tip">Tips:\n此为模拟接入益玩超级SDK过程，您看到的登录以及支付只用于调试，不是最终渠道包，最后通过分包替换成真实渠道登录与支付</string>
+    <string name="ewan_supersdk_login_title">该登录为模拟测试</string>
+    <string name="ewan_supersdk_login_username">用户名：</string>
+    <string name="ewan_supersdk_logo_tel_tip">客服电话：</string>
+    <string name="ewan_supersdk_pay">充值</string>
+    <string name="ewan_supersdk_pay_alipay">支付宝</string>
+    <string name="ewan_supersdk_pay_creditcard">信用卡</string>
+    <string name="ewan_supersdk_pay_savecard">储蓄卡</string>
+    <string name="ewan_supersdk_pay_unionpay">银联卡</string>
+    <string name="ewan_supersdk_pay_wx">微信支付</string>
+    <string name="ewan_supersdk_promt">提示</string>
+    <string name="ewan_supersdk_sure">确定</string>
+    <string name="ewan_supersdk_switch_account_btn">切换账号</string>
+    <style name="ewan_supersdk_CustomProgessBarStyle">
+        <item name="android:indeterminateDrawable">@drawable/ewan_supersdk_loading_progressdialog</item>
+        <item name="android:minWidth">68dip</item>
+        <item name="android:maxWidth">68dip</item>
+        <item name="android:minHeight">68dip</item>
+        <item name="android:maxHeight">68dip</item>
+    </style>
+    <style name="ewan_supersdk_Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+  		<item name="android:windowCloseOnTouchOutside">false</item>    
+    </style>
+    <style name="ewan_supersdk_button_blod_white_text" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/ewan_supersdk_black</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">125dip</item>
+        <item name="android:layout_height">45dip</item>
+    </style>
+    <style name="ewan_supersdk_loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>无标题
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>模糊
+        <item name="android:textSize">16dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="ewan_supersdk_normal_textview" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/ewan_supersdk_black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="supersdk_dialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowFrame">@null</item>边框
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+        <item name="android:textSize">16dip</item>
+        <item name="android:textColor">@color/ewan_supersdk_blue_shadow</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!-- <item name="android:windowContentOverlay">@null</item> -->
+	</style>
+</resources>

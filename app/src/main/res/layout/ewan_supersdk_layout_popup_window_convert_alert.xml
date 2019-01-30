@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="3dp"
+    android:background="@drawable/ewan_supersdk_popup_window_tip_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/ewan_supersdk_popup_window_tip_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical|left"
+        android:text="提示"
+        android:textColor="@color/ewan_supersdk_convert_font_red"
+        android:textSize="14dp"/>
+
+</LinearLayout>

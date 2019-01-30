@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/ewan_supersdk_pay_net_voucher_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" 
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/ewan_supersdk_pay_net_voucher_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dip"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/ewan_supersdk_pay_net_voucher_tip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dip"
+                android:clickable="false"
+                android:focusable="false"
+                android:textSize="12dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ewan_supersdk_pay_net_arrow_layout"
+                android:layout_width="30dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ewan_supersdk_pay_net_arrow_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="5dip"
+                    android:clickable="false"
+                    android:focusable="false" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ewan_supersdk_pay_net_choose_type_tip_tv"
+            style="@style/ewan_supersdk_normal_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="32dip"
+            android:layout_below="@id/ewan_supersdk_pay_net_voucher_layout"
+            android:layout_marginLeft="5dip"
+            android:gravity="center_vertical"
+            android:textColor="@color/ewan_supersdk_white"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/ewan_supersdk_pay_net_pay_money_tv"
+            style="@style/ewan_supersdk_normal_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_below="@id/ewan_supersdk_pay_net_choose_type_tip_tv"
+            android:layout_marginLeft="5dip"
+            android:gravity="center_vertical"
+            android:textColor="@color/ewan_supersdk_white"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:id="@+id/ewan_supersdk_pay_net_pay_voucher_text_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_below="@id/ewan_supersdk_pay_net_pay_money_tv"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/ewan_supersdk_pay_net_pay_voucher_text_tv"
+                style="@style/ewan_supersdk_normal_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center|left"
+                android:textColor="@color/ewan_supersdk_white"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/ewan_supersdk_pay_net_pay_voucher_need_recharge_tv"
+                style="@style/ewan_supersdk_normal_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dip"
+                android:gravity="center"
+                android:textColor="@color/ewan_supersdk_white"
+                android:textSize="14dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ewan_supersdk_pay_net_pay_product_tv"
+            style="@style/ewan_supersdk_normal_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_below="@id/ewan_supersdk_pay_net_pay_voucher_text_layout"
+            android:layout_marginLeft="5dip"
+            android:gravity="center_vertical"
+            android:textColor="@color/ewan_supersdk_white"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/ewan_supersdk_pay_net_pay_note_tv"
+            style="@style/ewan_supersdk_normal_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_below="@id/ewan_supersdk_pay_net_pay_product_tv"
+            android:layout_marginLeft="5dip"
+            android:gravity="center_vertical"
+            android:textColor="@color/ewan_supersdk_white"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:id="@+id/ewan_supersdk_pay_net_no_radio_btn_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ewan_supersdk_pay_net_pay_note_tv"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="20dip" >
+
+            <Button
+                android:id="@+id/ewan_supersdk_pay_net_go_pay_btn"
+                style="@style/ewan_supersdk_button_blod_white_text"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/ewan_supersdk_dialog_pay_exit_sure_btn"
+                android:shadowColor="#ff891f02"
+                android:shadowDy="1"
+                android:text="@string/ewan_supersdk_pay"
+                android:textColor="@color/ewan_supersdk_white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ewan_supersdk_pay_net_no_radio_tip_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/ewan_supersdk_pay_net_no_radio_btn_layout"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="30dip"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/ewan_supersdk_pay_net_no_radio_tip_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="@color/ewan_supersdk_black"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ewan_supersdk_pay_net_tel_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ewan_supersdk_pay_net_no_radio_tip_layout"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:clickable="true"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <!--
+         <TextView
+        android:id="@+id/ewan_supersdk_pay_net_need_ecoin_tv"
+        style="@style/ewan_supersdk_normal_textview"
+        android:layout_width="0dip"
+        android:layout_height="32dip"
+        android:layout_weight="1"
+        android:gravity="left|center"
+        android:text="test"
+        android:textColor="@color/cw_white" />
+            -->
+
+            <TextView
+                style="@style/ewan_supersdk_normal_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="32dip"
+                android:gravity="left|center"
+                android:text="@string/ewan_supersdk_logo_tel_tip"
+                android:textColor="@color/ewan_supersdk_logo_text" />
+
+            <TextView
+                android:id="@+id/ewan_supersdk_pay_net_tel_tv"
+                style="@style/ewan_supersdk_normal_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="32dip"
+                android:gravity="left|center"
+                android:textColor="@color/ewan_supersdk_logo_text" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ewan_supersdk_pay_net_module_version_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ewan_supersdk_pay_net_tel_layout"
+            android:layout_marginRight="10dip"
+            android:text="V4.0.0"
+            android:textColor="#0073bd"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+</ScrollView>

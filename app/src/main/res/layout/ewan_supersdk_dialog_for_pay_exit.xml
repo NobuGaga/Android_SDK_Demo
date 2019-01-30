@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="300.0dip"
+        android:layout_height="200.0dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/ewan_supersdk_card_tip_dialog_bg"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:clickable="true"
+        android:orientation="vertical" >
+     
+     <LinearLayout
+        android:id="@+id/ewan_supersdk_custom_dialog_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="25dip"
+        android:orientation="horizontal"
+        >
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ewan_supersdk_title_left_icon" />
+        
+        <TextView
+            android:id="@+id/ewan_supersdk_custom_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="@string/ewan_supersdk_promt"
+            android:textColor="@color/ewan_supersdk_reg_title_text"
+            android:textSize="18dp"/>
+        
+         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ewan_supersdk_title_right_icon" />
+	
+	</LinearLayout>
+
+
+     <LinearLayout
+        android:id="@+id/ewan_supersdk_custom_dialog_text_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_below="@+id/ewan_supersdk_custom_dialog_title_layout"
+        android:orientation="horizontal" 
+        android:clickable="true" >          
+
+        <TextView
+            android:id="@+id/ewan_supersdk_custom_dialog_message"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.5"
+            android:textColor="@color/ewan_supersdk_white"
+            android:textSize="18dp"
+            android:singleLine="false"
+            android:maxLines="30"
+            android:scrollbars="vertical"
+            android:clickable="true" />
+	</LinearLayout>
+	
+    <LinearLayout
+            android:id="@+id/ewan_supersdk_custom_dialog_btn_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"    
+            android:gravity="center"
+            android:layout_below="@+id/ewan_supersdk_custom_dialog_text_layout"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/ewan_supersdk_custom_dialog_positiveButton"
+                android:layout_width="100.0dip"
+                android:layout_height="40.0dip"
+                android:background="@drawable/ewan_supersdk_dialog_pay_exit_cancel_btn"
+                android:gravity="center"
+                android:text="@string/ewan_supersdk_sure" 
+                android:textColor="@color/ewan_supersdk_white"
+                android:textSize="18dp"/>
+            
+            <Button
+                android:id="@+id/ewan_supersdk_custom_dialog_negativeButton"
+                android:layout_width="100.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="30dip"
+                android:background="@drawable/ewan_supersdk_dialog_pay_exit_sure_btn"
+                android:gravity="center"
+                android:text="@string/ewan_supersdk_sure" 
+                android:textColor="@color/ewan_supersdk_white"
+                android:textSize="18dp"/>
+        </LinearLayout>
+    
+    </RelativeLayout>
+    
+
+</LinearLayout>

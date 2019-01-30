@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="300.0dip"
+        android:layout_height="300.0dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/ewan_supersdk_exit_dialog_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+     
+     <LinearLayout
+        android:id="@+id/ewan_supersdk_custom_dialog_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:gravity="center"
+        android:background="@color/ewan_supersdk_exit_dialog_title_bg">
+        
+<!--         <ImageView
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:src="@drawable/ewan_supersdk_tip_dialog_icon" /> -->
+        
+        <TextView
+            android:id="@+id/ewan_supersdk_custom_dialog_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/ewan_supersdk_promt"
+            android:textColor="@color/ewan_supersdk_white"
+            android:gravity="center"
+            android:textSize="20dp"/>
+	
+	</LinearLayout>
+
+
+     <LinearLayout
+        android:id="@+id/ewan_supersdk_custom_dialog_text_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dip"
+        android:layout_below="@+id/ewan_supersdk_custom_dialog_title_layout"
+        android:orientation="horizontal" 
+        android:clickable="true" >          
+
+        <TextView
+            android:id="@+id/ewan_supersdk_custom_dialog_message"
+            android:layout_width="fill_parent"
+            android:layout_height="160dip"
+            android:lineSpacingMultiplier="1.5"
+            android:textColor="@color/ewan_supersdk_white"
+            android:textSize="18dp"
+            android:singleLine="false"
+            android:maxWidth="290dip"
+            android:maxLines="30"
+            android:scrollbars="vertical"
+            android:clickable="true" 
+            android:gravity="center|left"/>
+	</LinearLayout>
+	
+    <LinearLayout
+            android:id="@+id/ewan_supersdk_custom_dialog_btn_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"    
+            android:gravity="center"
+            android:layout_below="@+id/ewan_supersdk_custom_dialog_text_layout"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/ewan_supersdk_custom_dialog_positiveButton"
+                android:layout_width="250.0dip"
+                android:layout_height="40.0dip"
+                android:background="@drawable/ewan_supersdk_orange_btn"
+                android:gravity="center"
+                android:text="@string/ewan_supersdk_sure" 
+                android:textColor="@color/ewan_supersdk_white"
+                android:textSize="18dp"/>
+        </LinearLayout>
+    
+    </RelativeLayout>
+    
+
+</LinearLayout>

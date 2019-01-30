@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="false">
+        <shape>
+            <solid android:color="@color/ewan_supersdk_convert_text_btn_pressed_bg"/>
+        </shape>
+    </item>
+    <item >
+        <shape>
+            <solid android:color="@color/ewan_supersdk_convert_input_bar_bg"/>
+        </shape>
+    </item>
+</selector>

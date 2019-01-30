@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ewan_supersdk_pay_activity_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ewan_supersdk_pay_center_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:baselineAligned="false"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="8dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginBottom="8dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="8dip"
+            android:layout_marginBottom="8dip"
+            android:layout_weight="9"
+            android:orientation="vertical" >
+
+<!--             <TextView
+                android:id="@+id/cw_pay_center_method_tv"
+                style="@style/cw_blod_channel_textview"
+                android:layout_width="fill_parent"
+                android:layout_height="34dip"
+                android:background="@drawable/cw_channel_list_bg"
+                android:shadowColor="@color/cw_blue_shadow"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/cw_choose_pay_method"
+                android:textStyle="normal" /> -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/ewan_supersdk_pay_type_bg"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/ewan_supersdk_pay_select_type_lv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="@color/ewan_supersdk_black"
+                    android:divider="@null"
+                    android:dividerHeight="10dp"
+                    android:listSelector="@color/ewan_supersdk_black"
+                    android:scrollbars="none"
+                    android:transcriptMode="disabled" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+<!--             <TextView
+                android:id="@+id/cw_pay_center_choose_pay_tv"
+                style="@style/cw_blod_channel_textview"
+                android:layout_width="fill_parent"
+                android:layout_height="34dip"
+                android:background="@drawable/cw_pay_title_bg"
+                android:shadowColor="@color/cw_blue_shadow"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/cw_select_money"
+                android:textStyle="normal" /> -->
+
+            <LinearLayout
+                android:id="@+id/ewan_supersdk_pay_load_type_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="vertical"
+                android:background="@color/ewan_supersdk_recharge_bg" >
+                              
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
